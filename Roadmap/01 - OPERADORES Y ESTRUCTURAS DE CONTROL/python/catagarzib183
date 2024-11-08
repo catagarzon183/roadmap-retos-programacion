@@ -1,0 +1,122 @@
+'''
+Operadores
+'''
+
+#Operadores aritmeticos
+sum = 10 +4
+print (f"suma: 7-9 = {7-9}")
+print(sum)
+print (f"Multiplicacion: 7*3 = {7*9} ")
+print (f"Modulo: 18 % 3 = {18 % 3}")
+print (f"Exponente: 2 ** 3 = {2**3}")
+print (f"Divisón entera: 4//3 = {4//3}" )
+print (f"Divisón: 4/3 = {4/3}" )
+
+#Operadores de comparación
+
+print(f"Igualdad :  10 == 3 es {10==3}")
+print(f"Desigualdad :  10 != 3 es {10!=3}")
+print(f"Menor que: 10 <3 es {10<3}")
+
+#Operadores Logicos
+
+print(f"AND &&: 10 +3 == 13 and 5-1 ==4 {10+3==13 and 5-1 ==4}")
+print (f"OR: 10+3 ==4 or 5+4 = 9 {10+3 ==4 or 5+4 == 9}")
+print(f"NOT !: not 10 + 3 == 14 es {not 10 + 3 == 14} ")
+
+
+#Operadores d asignacion
+
+my_number = 11 #asignacion
+print(my_number)
+my_number +=1 # suma y asignacion
+print(my_number)
+my_number -=1 # resta y asignacion
+print(my_number)
+my_number *=2 # multiplicacion y asignacion
+print(my_number)
+my_number /=1 # division y asignacion
+print(my_number)
+my_number %=3 # modulo y asignacion
+print(my_number)
+my_number **=3 # exponente y asignacion
+print(my_number)
+my_number //=3 # division entera y asignacion
+
+
+#Operadores de Identidad
+
+'''Comparar los valores de la posicion de memoria'''
+
+my_new_number =1.0
+print(f"my_number is my_new_number es {my_number is my_new_number}") #En este caso aparece falso poque mynewnumber y mynumber tienen diferentes posiciones de memoria
+my_new_number = my_number
+print(f"my_number is my_new_number es {my_number is my_new_number}")
+print(f"my_number is not my_new_number es {my_number is not my_new_number}")
+
+
+#Operadores de pertenencia
+
+'''Conjuntos y estructuras se usan mucho'''
+
+print(f" 'a' in 'catalina' = {'a' in 'catalina'}")
+print(f" 'a' not in 'catalina' = {'a' not in 'catalina'}")
+
+#Operadores de bit
+
+'''Casi no se usan en toda la programacion'''
+
+a = 10 # 1010
+b= 3 # 11
+
+print(f"AND: 10  & 3 = {10  & 3}") #0010
+print(f"OR: 10 |  3 = {10 | 3}") 
+print(f"XOR: 10 ^  3 = {10 ^ 3}") 
+print(f"NOT: ~10 = {~10}") 
+print (f"Desplazamiento a la derecha := {10 >> 2}")
+
+#Estructua de control
+
+
+#Condicionales, como tomar diferentes caminos
+
+my_string = "Catalinda"
+
+if my_string == "Cataliinda":
+    print("my_string es 'Catalinda")
+elif my_string == "Cata":
+    print("my_string es 'Cata'")
+else:
+    print("my_string no es 'catalinda' ni 'Cata'")
+
+#Iterativas
+'''FOR para recorrer estructuras que tienen más de un elemento o para ejecutar varias veces'''
+for i in range(11):
+    print(i)
+i = 0
+
+while  i <=10:
+    print (i) 
+    i += 1 
+
+#Manejo de excepciones
+
+try:
+    print(10/0)
+except:
+    print("Se ha producido un error")
+finally:
+    print("Ha finalizado el manejo e excepciones")
+
+
+
+#Ejercicio
+
+i = 11
+print(i)
+while  i >=11 and i <=54:
+    if i%3 !=0 and i!=16 and i%2 ==0 :
+        print (i)
+    i += 1
+i=55
+print(i)
